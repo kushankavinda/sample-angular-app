@@ -16,7 +16,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { ProgressComponent } from './progress/progress.component';
 import { HomeComponent } from './home/home.component';
 import { LinechartComponent } from './linechart/linechart.component';
-import { NameofthedirectiveDirective } from './nameofthedirective.directive';
+import { HighlightDirective } from './highlight.directive';
+
 
 
 @NgModule({
@@ -34,7 +35,7 @@ import { NameofthedirectiveDirective } from './nameofthedirective.directive';
     ProgressComponent,
     HomeComponent,
     LinechartComponent,
-    NameofthedirectiveDirective
+    HighlightDirective
   ],
   providers: [ HeroServiceService ],
   bootstrap: [ AppComponent]
