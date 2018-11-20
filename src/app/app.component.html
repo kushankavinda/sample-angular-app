@@ -1,0 +1,23 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<router-outlet></router-outlet>
+<app-menu (var_name_event)="valueComes($event)"></app-menu>
+<app-hero-form></app-hero-form> 
+
+<!--this for loop is not working-->
+<div *ngFor="let i of months | slice:0:5 as total">
+    Months: {{i}} Total: {{total.length}}
+ </div>
+
+
+<!--this is if else condition-->
+ <span *ngIf="x==1; else condition1">Condition is valid.</span>
+ <p>this s another paragrpah which has no relashion</p>
+ <ng-template #condition1>Condition is invalid</ng-template>
+
+ <div style="float: right"> Months :
+    <select>
+       <option *ngFor="let i of months">{{i}}</option>
+    </select>
+ </div>
+
+ <button (click)="myEvent($event)">My Button</button>

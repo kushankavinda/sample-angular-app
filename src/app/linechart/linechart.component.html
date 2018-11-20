@@ -1,0 +1,16 @@
+<div class="text-center">
+  <span class="min-chart" id="chart-sales" data-percent="56"><span class="percent"></span></span>
+  <h5><span class="label green badge">Sales <i class="fa fa-arrow-circle-up"></i></span></h5>
+</div>
+
+<script>
+  $(function () {
+    $('.min-chart#chart-sales').easyPieChart({
+      barColor: "#4caf50",
+      onStep: function (from, to, percent) {
+        $(this.el).find('.percent').text(Math.round(percent));
+      }
+    });
+  });
+
+</script>
