@@ -4,7 +4,9 @@ import { Directive, ElementRef, HostListener } from '@angular/core';
   selector: '[appHighlight]'
 })
 export class HighlightDirective {
-  constructor(private el: ElementRef) { }
+  constructor(private el: ElementRef) {
+   
+   }
 
   @HostListener('mouseenter') onMouseEnter() {
     this.highlight('green');
@@ -15,6 +17,7 @@ export class HighlightDirective {
   }
 
   private highlight(color: string) {
+   // this.el.nativeElement.innerHTML="chane dom elemtn using diretives";
     this.el.nativeElement.style.backgroundColor = color;
   }
 }

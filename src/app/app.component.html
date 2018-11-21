@@ -1,7 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <router-outlet></router-outlet>
 <app-menu (var_name_event)="valueComes($event)"></app-menu>
-<app-hero-form></app-hero-form> 
+<app-hero-form appHighlight></app-hero-form> 
 
 <!--this for loop is not working-->
 <div *ngFor="let i of months | slice:0:5 as total">
