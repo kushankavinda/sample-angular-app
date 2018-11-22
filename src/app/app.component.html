@@ -1,13 +1,15 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<router-outlet></router-outlet>
+<p>this is app.component.html page</p>
+
 <app-menu (var_name_event)="valueComes($event)"></app-menu>
-<app-hero-form appHighlight></app-hero-form> 
+
+<router-outlet></router-outlet>
+
 
 <!--this for loop is not working-->
 <div *ngFor="let i of months | slice:0:5 as total">
     Months: {{i}} Total: {{total.length}}
  </div>
-
 
 <!--this is if else condition-->
  <span *ngIf="x==1; else condition1">Condition is valid.</span>
@@ -26,3 +28,17 @@
         <span changeText >Welcome to haulmatic customer care.</span>
 </div>
 <p appHighlight>Highlight me!</p>
+<b>{{y | uppercase}}</b><br/>
+
+
+<h1>Custom Pipe</h1>
+<b>Square root of 25 is: {{25 | custompipeexample}}</b>
+<br/>
+<b>Square root of 729 is: {{729 | custompipeexample}}</b>
+
+
+<app-pipesexample></app-pipesexample>
+
+<a routerLink = "new-cmp">New component</a>
+<app-copyright></app-copyright>
+

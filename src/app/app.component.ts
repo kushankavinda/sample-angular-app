@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MyserviceService } from './myservice.service';
+
 
 
 
@@ -18,6 +20,7 @@ export class AppComponent {
   }
   // tslint:disable-next-line:member-ordering
   x:number=1;
+  y:string="To upper case using pipes";
   months = ["January", "Feburary", "March", "April", "May", 
             "June", "July", "August", "September",
             "October", "November", "December"];
@@ -26,5 +29,6 @@ export class AppComponent {
               alert("alert event");
               console.log(event);
             }
-  
+
+            
 }

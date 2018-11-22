@@ -17,6 +17,11 @@ import { ProgressComponent } from './progress/progress.component';
 import { HomeComponent } from './home/home.component';
 import { LinechartComponent } from './linechart/linechart.component';
 import { HighlightDirective } from './highlight.directive';
+import { PipesexampleComponent } from './pipesexample/pipesexample.component';
+import { CustompipeexamplePipe } from './custompipeexample.pipe';
+import { NewCmpComponent } from './new-cmp/new-cmp.component';
+import { MyserviceService } from './myservice.service';
+import { CopyrightComponent } from './copyright/copyright.component';
 
 
 
@@ -35,9 +40,13 @@ import { HighlightDirective } from './highlight.directive';
     ProgressComponent,
     HomeComponent,
     LinechartComponent,
-    HighlightDirective
+    HighlightDirective,
+    PipesexampleComponent,
+    CustompipeexamplePipe,
+    NewCmpComponent,
+    CopyrightComponent
   ],
-  providers: [ HeroServiceService ],
+  providers: [ HeroServiceService],
   bootstrap: [ AppComponent]
 })
 export class AppModule { }
